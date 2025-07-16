@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+.roboto-fonting {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-left {
+  animation: scroll-left 50s linear infinite;
+}
+
+.aa:hover .scroll-left {
+  animation-play-state: paused;
+}
+
+@layer utilities {
+  @keyframes spinner-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spinner-roller {
+    animation: spinner-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 32px 32px;
+  }
+}
