@@ -23,3 +23,10 @@ A modern and responsive **News Website** built with **React + Vite**. It fetches
 - **Others:** Loader library  
 
 ---
+ 
+
+## 📦 Installation & Setup  
+
+1. Clone the repository
+2. npm install
+3. run npm dev
